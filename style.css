@@ -1,0 +1,140 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    background: #eee;
+    font-family: cursive;
+}
+
+/*header part*/
+
+header{
+    width: 100%;
+    height: 80px;
+    background-color: #ddd;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+header h3 a{
+    text-decoration: none;
+    font-size: 8vh;
+}
+nav ul{
+/*    border: 2px solid red;*/
+    list-style: none;
+    display: flex;
+    justify-content:space-evenly;
+    align-content: center;
+    
+}
+
+nav ul li{
+    margin: 0 15px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 3.5vh;
+    border-bottom:0;
+    transition: all 0.4s;
+}
+
+nav ul li a:hover{
+    color: darkcyan;
+    border-bottom: 5px solid orangered;
+}
+
+#frm{
+    border: solid gray 1px;
+    width:25%;
+    border-radius: 2px;
+    margin: 120px auto;
+    background: white;
+    padding: 50px;
+}
+input{
+  margin: 0.5em;
+}
+
+#btn{
+    width: 120px;
+    border:0;
+    color: #fff;
+    background: #337ab7;
+    padding: 7px;
+    margin:15px 30%;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#btn:hover{
+  background-color:#337ae7;
+}
+
+label {
+    color: #888;
+}
+
+footer {
+    text-align: center;
+    color: #888;
+}
+
+#banner {
+    height: 100vh;
+    background: linear-gradient(to right, transparent,blue),url('banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    background-blend-mode: exclusion;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    
+}
+
+#banner h1{
+    color: #fff;
+    font-size: 8vh;
+    text-align: center;
+
+}
+
+#banner p{
+    color: #fff;
+    font-size: 3vh;
+/*    width: 800px;*/
+    text-align: justify;
+}
+
+
+@media only screen and (max-width:480px){
+    header{
+        width: 100%;
+        height: 150px;
+        background-color: #ddd;
+        display: flex;
+        flex-flow: column;  
+        align-items: center;
+    }
+    nav ul{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-content: space-between;
+    }
+    nav ul li a{
+        font-size: 16px;
+        
+    }
+    nav ul li a:hover{
+        border: 0;
+    }
+}
